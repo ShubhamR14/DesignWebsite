@@ -1,0 +1,23 @@
+GIT 
+
+1.git config --global user.name "Shubham Rathod"
+
+2.git config --global user.email "Shubham Rathod@gmail.com"
+
+3.touch .gitignor	(Creater ignore file)
+
+4.git init	(Initialized the file)
+
+5.git add . 
+
+6.git commit -m "Initial commit"
+
+7.git status (just to check work or not)
+
+8. ssh search to get key
+
+9. cat <path to id_rsa.pub> (Past this key to the github ssh folder in setting)
+
+10.gt remote add orign <ssh url.git>
+
+11 git push origin master(Finally Done)
