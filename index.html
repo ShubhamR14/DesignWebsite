@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Rathod Fitness</title>
+    <link href="./style.css"  rel="StyleSheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: "Anta", sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background: url('./Image/BgW.jpg');
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+
+        }
+
+        .left{
+            position: absolute;
+            left: 60px;
+            top: 0px;
+            margin: 20px;
+            /* border:2px solid red; */
+            display: inline-block;
+        }
+
+        .left img{
+            text-align: center;
+            width: 70px;
+            /* height: 50px; */
+            filter: invert(100%);
+        }
+        .left div{
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 19px;
+            text-align: center;
+        }
+
+        .middle{
+            text-align: center;
+            margin:20px auto;
+            width: 50%;
+            /* border: 2px solid rgb(255, 255, 255); */
+        }
+        .right{
+            position: absolute;
+            right: 20px;
+            top: 30px;
+            /* border: 2px solid pink; */
+            display: inline-block;
+        }
+
+        .btn{
+            font-family: "Anta", sans-serif;
+            margin: 0px 10px;
+            color: white;
+            background-color:transparent;
+            padding: 4px 16px;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color:rgb(0, 16, 72);
+        }
+
+        .navbar{
+            display: inline-block;
+            /* background-color: antiquewhite; */
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 30px 20px;
+        }
+
+        .navbar li a:hover,.navbar li a.active{
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .container{
+            border:2px solid white;
+            width: 33%;
+            margin: 60px 80px;
+            padding: 50px 50px;
+            border-radius: 30px;
+        }
+
+        .form-group input{
+            font-family: "Anta", sans-serif;
+            text-align: center;
+            display: block;
+            width: 200px;
+            padding: 13px;
+            margin: 2px auto; 
+            font-size: 13px;
+            border-radius: 15px;
+            padding: 10px;
+            filter: opacity(60%);
+            
+        }
+
+        .container h1{
+            text-align: center;
+        }
+
+        .container button{
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        .form-group label{
+            display: inline-block;
+            position: absolute;
+            margin: 20px;
+            }
+
+        .container{
+            margin: 2px auto;
+            width: 33%;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    <header class="header">
+        <!-- Left Box for the logo -->
+        <div class="left">
+            <img src="./Image/Logo.png" alt="Gym Logo">
+            <div>Rathod Fitness</div>
+        </div>
+        <!-- Mid Box for navigation -->
+        <div class="middle">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" >About Us</a></li>
+                <li><a href="#" >Fitness Calculator</a> </li>
+                <li><a href="#" >Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right side for the Buttons like on face books -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email </button>
+        </div>
+
+        <div class="container">
+            <h1>Joining Form</h1>
+            <form action="" class="noaction.php">
+                <div class="form-group">
+                    <label for="name">Name :</label>
+                    <input type="text" name="name" id="name" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile :</label>
+                    <input type="tel" name="number" id="mobile" placeholder="Enter Mobile Number">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location :</label>
+                    <input type="text" name="location" id="location" placeholder="Enter name">
+                </div>
+
+                <button class="btn">Submit</button>
+                
+            </form>
+
+        </div>
+    </header>
+</body>
+</html>
